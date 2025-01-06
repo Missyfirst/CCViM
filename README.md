@@ -23,7 +23,7 @@ Medical image segmentation demands the aggregation of global and local feature r
 ## Visual results on Synapse dataset
 ![framework](imgs/fig7.jpg)
 
-## 0. Main Environments
+## Main Environments
 ```bash
 conda create -n CCViM python=3. 
 conda activate CCViM
@@ -40,7 +40,7 @@ pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs
 The version of causal_conv1d can be found here. {[causal_conv1d](https://github.com/Dao-AILab/causal-conv1d/releases)} 
 The version of mamba_ssm can be found here. {[mamba_ssm](https://github.com/state-spaces/mamba/releases/)}
 
-## 1. Prepare the dataset
+## Prepare the dataset
 
 ### ISIC datasets
 - The ISIC17  divided into a 7:3 ratio, can be found here {[GoogleDrive](https://drive.google.com/file/d/1ZTOVI5Vp3KTQFDt5moJThJ_xYp2pKBAK/view?usp=sharing)}.
@@ -114,7 +114,7 @@ The version of mamba_ssm can be found here. {[mamba_ssm](https://github.com/stat
     - Labels
     - Overlay
 
-## 2. Prepare the pre_trained weights
+## Prepare the pre_trained weights
 
 | Tasks     |     weights |
 |:----------|------------:|
@@ -125,7 +125,7 @@ The version of mamba_ssm can be found here. {[mamba_ssm](https://github.com/stat
 | Synapse   | [weight](https://drive.google.com/file/d/1wsGpz4QsMHtWd33Zm3XgKMRjVTG9U3DL/view?usp=sharing) |
 The pretrain weight of LocalMamba can be found at [LocalMamba](https://drive.google.com/file/d/1CWP5atOLJYnoBr8Nx8159WJMNeSUe2ei/view?usp=sharing)
 
-## 3. Train and Infer on the CCViM 
+## Train and Infer on the CCViM 
 
 ### ISIC17, ISIC18, and Synapse tasks
 ```bash
